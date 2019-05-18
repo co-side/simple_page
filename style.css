@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(223,235,166);
+}
+.container {
+  padding-left: 20px;
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.title {
+  color: rgb(0,144,75);
+  font-weight: 500;
+  width: 100%;
+}
+.main .title {
+  width: auto;
+  border: solid 1px red;
+  padding: 7px 15px 4px;
+}
+.side-menu {
+  background-color: rgb(61,181,125);
+  width: 200px;
+  color: white;
+  align-self: flex-start;
+}
+.side-menu ul {
+  margin-left: -10px;
+}
+.side-menu  a {
+  color: white;
+  text-decoration-line: none;
+}
+.main {
+  padding: 0px 20px 20px;
+  margin-left: 10px;
+  background-color: white;
+  width: calc(100% - 250px);
+}
+article {
+  display: none;
+}
+.main #content-ruby,
+#ruby:target ~ .main #content-ruby,
+#java:target ~ .main #content-java,
+#c-sharp:target ~ .main #content-c-sharp,
+#objective-c:target ~ .main #content-objective-c,
+#javascript:target ~ .main #content-javascript{
+  display: block;
+}
+.switch {
+	display: none;
+}
+.switch:target ~ .main #content-ruby{
+  display: none;
+}
