@@ -26,9 +26,15 @@ body {
 .side-menu ul {
   margin-left: -10px;
 }
+.side-menu li {
+  padding-bottom: 5px;
+}
+.side-menu li:last-child {
+  padding-bottom: 0px;
+}
 .side-menu  a {
   color: white;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 .main {
   padding: 0px 20px 20px;
